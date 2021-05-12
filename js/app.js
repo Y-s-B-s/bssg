@@ -111,7 +111,7 @@ const start = async () => {
     getServerAddress(client.session.dcId, client.session.port),
     client.session.port
   );
-  const message = `The generated string session by BSSG:\n\n${client.session.save()}`;
+  const message = `The generated string session by Yeagerist Browser String Session Generator:\n\n${client.session.save()}`;
   await client.sendMessage("me", { message: message });
   showResultSection();
 };
